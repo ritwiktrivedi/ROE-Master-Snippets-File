@@ -33,3 +33,5 @@ https://www.adobe.com/in/acrobat/online/pdf-to-excel.html
 - Then copy the entire content in a new sheet and paste as values. (this helps is converting to csv.)
 
 Alternative: [pdf_to_excel.py](./pdf_to_excel.py)
+
+## Parsing HTML

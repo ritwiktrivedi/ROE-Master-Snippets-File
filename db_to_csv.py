@@ -10,3 +10,9 @@ db_data = pd.read_sql("select * from violations", engine)
 
 # Display the first 5 rows of the DataFrame
 db_data.to_csv('./processed_files/violations.csv', index=False)
+
+
+# Can also use sqlite3
+# import sqlite3
+# conn = sqlite3.connect("./mock4/mock_roe_4/violations.db")
+# db_data_2 = pd.read_sql("select * from violations", conn)

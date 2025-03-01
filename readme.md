@@ -6,13 +6,18 @@ Although an initiative by Ritwik Trivedi, this repo is a common resource. Please
 
 # Key steps:
 
+- Create .venv if not already created in VS code.
+
+> Do CTRL + Shift + P --> Select Python Interpreter --> Create Virtual Environment (.venv)  
+> --> Use requirements.txt for dependencies.
+
 - Activate venv using:
 
 ```CMD
-source .venv/bin/activate
+.venv\Scripts\activate
 ```
 
-- Install dependencies from the requirements.txt file.
+- Install dependencies from the requirements.txt file if created in CMD using python -m venv .venv
 
 ```CMD
 pip install -r requirements.txt

@@ -1,0 +1,28 @@
+{
+    "object": "list",
+    "model": "text-embedding-3-small",
+    "usage": {
+        "prompt_tokens": 12,
+        "total_tokens": 12
+    },
+    "data": [
+        {
+            "object": "embedding",
+            "index": 0,
+            "embedding": []
+        },
+        {
+            "object": "embedding",
+            "index": 1,
+            "embedding": []
+        },
+        {
+            "object": "embedding",
+            "index": 2,
+            "embedding": []
+        }
+    ],
+    "monthlyCost": "0.0033092399999999998",
+    "cost": "2.4000000000000003e-07",
+    "monthlyRequests": "7"
+}

@@ -28,3 +28,6 @@ async def jecho(query: str):
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
+
+# Run the server
+# uvicorn fastapi_demo_server:app --reload

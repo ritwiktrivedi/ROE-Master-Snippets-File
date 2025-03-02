@@ -1,0 +1,49 @@
+{
+    "model": "gpt-4o-mini",
+    "messages": [
+        {
+            "role": "system",
+            "content": "Classify the sentiment of the following three movie reviews. Respond with only one word per review: positive, negative, or neutral."
+        },
+        {
+            "role": "user",
+            "content": "0. I hate using LLMs through API calls \n1. The cinematography was breathtaking, and the performances were outstanding.\n2. The plot was confusing, and the dialogues were poorly written.\n3. The movie had both entertaining and boring moments in equal measure."
+        }
+    ],
+    "response_format": {
+        "type": "json_schema",
+        "json_schema": {
+            "name": "sentiment_analysis",
+            "strict": true,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "resp": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "sentence_no": {
+                                    "type": "integer",
+                                    "description": "This should be the refence sentence number, which will be given in the prompt. If not given, assign a number from the context and sentence position"
+                                },
+                                "sentiment": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "sentence_no",
+                                "sentiment"
+                            ],
+                            "additionalProperties": false
+                        }
+                    }
+                },
+                "required": [
+                    "resp"
+                ],
+                "additionalProperties": false
+            }
+        }
+    }
+}

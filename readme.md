@@ -41,3 +41,7 @@ Alternative: [pdf_to_excel.py](./pdf_to_excel.py)
 For multiple pdfs: [pdfs_to_excel.py](./pdfs_to_excel.py)
 
 ## Parsing HTML
+
+## Base64
+
+https://base64.guru/
